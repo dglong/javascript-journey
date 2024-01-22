@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --raisin-black: #2e2c2f;
+  --payne-gray: #475b6318;
+  --cambridge-blue: #729b79;
+  --cambridge-blue-hover: #7f9e84;
+  --cambridge-blue-faded: #729b793a;
+  --ash-gray: #bacdb0;
+  --lavender-blush: #f3e8ee;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--raisin-black);
+  color: var(--lavender-blush);
+}
+
+.todo-section {
+  padding: 3rem;
+}
+
+.todo-wrapper {
+  border-radius: 0.5rem;
+  background-color: var(--payne-gray);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.todo-wrapper .todo-add input {
+  padding: 0.75rem 1.25rem;
+  color: var(--lavender-blush);
+  background-color: var(--cambridge-blue-faded);
+  font-size: 1.5rem;
+  outline: unset;
+  border: unset;
+  border-radius: 1rem;
+}
+
+.todo-wrapper .todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todo-wrapper .todo-list .todo-item {
+  height: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  background-color: var(--cambridge-blue);
+  display: flex;
+  align-items: center;
+}
+
+.todo-wrapper .todo-list .todo-item:hover {
+  background-color: var(--cambridge-blue-hover);
+}
