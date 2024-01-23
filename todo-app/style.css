@@ -5,7 +5,7 @@
   --payne-gray: #475b6318;
   --cambridge-blue: #729b79;
   --cambridge-blue-hover: #7f9e84;
-  --cambridge-blue-faded: #729b793a;
+  --cambridge-blue-faded: #d8d8d817;
   --ash-gray: #bacdb0;
   --lavender-blush: #f3e8ee;
 }
@@ -16,7 +16,14 @@ body {
   color: var(--lavender-blush);
 }
 
+input {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--lavender-blush);
+}
+
 .todo-section {
+  display: flex;
+  justify-content: center;
   padding: 3rem;
 }
 
@@ -58,4 +65,14 @@ body {
 
 .todo-wrapper .todo-list .todo-item:hover {
   background-color: var(--cambridge-blue-hover);
+}
+
+.todo-item input {
+  width: 100%;
+  background-color: transparent;
+  outline: unset;
+  border: unset;
+  font-size: 1.25rem;
+  color: var(--lavender-blush);
+  border-bottom: 2px solid rgba(250, 250, 250, 0.445);
 }
